@@ -1,0 +1,41 @@
+body {
+  background-image: url('back.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+
+#cardViewDiv{
+    justify-content: center;
+    margin-top: 270px;
+} 
+
+#dropDownDiv{
+    justify-content: center;
+}
+
+/*---- To increase card size ----*/
+.singleclass{
+    justify-content: center;
+    height: 500px;
+    width: 500px;
+    margin-top: -150px;
+    position: absolute;
+}
+
+.card-body{
+    background-color: #e5e0e0;
+    margin-top: 20px;
+    height: 65px;
+}
+
+.card-title{
+    font-size: 1.5em;
+    opacity: 0.8;
+    text-align: center; 
+    padding: auto; 
+}
+
+a:hover {
+    color: red;
+}

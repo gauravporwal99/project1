@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>XYZ'S LOGIN PAGE</title>
+        <link rel="stylesheet" href="LoginPage2.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    </head>
+    <body>
+        <section>
+            <div class="form-box">
+                <div class="form-value">
+                    <form action="">
+                        <h2>LOGIN</h2>
+                        <div class="inputbox">
+                            <ion-icon name="person-circle-outline"></ion-icon>
+                            <input type="text" required>
+                            <label for="">USERNAME</label>
+                        </div>
+                        <div class="inputbox">
+                            <ion-icon name="lock-closed-outline"></ion-icon>
+                            <input type="password" required>
+                            <label for="password">PASSWORD</label>
+                        </div>
+                        <div class="forget">
+                            <label for=""><input type="checkbox">REMEMBER ME</label>
+                            <!-- <a href="#">FORGET PASSWORD</a> -->
+                        </div>
+                        <button onclick="logintask()">LOGIN</button>
+                        <DIV class="register">
+                            <p>Don't have an account <a href="Registrationpage.html">REGISTER</a></p>
+                        </DIV><BR>
+
+                            <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+                            <a href="https://www.linkedin.com/login" class="fa fa-linkedin"> </a>
+                            <a href="https://www.google.com/" class="fa fa-google"> </a>
+                       
+                    </form>         
+                </div>
+               
+            </div>
+              
+        </section>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+        <script>
+            function logintask(){
+                alert("Login Successful!");
+            }
+        </script>
+
+    </body>
+</html>

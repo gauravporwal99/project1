@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="REGISTRATIONPAGE.CSS">
+        
+        <title>
+           REGISTRATION PAGE
+        </title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"> </SCript>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script> -->
+         
+    </head>
+    <body >
+
+        <H1 STYLE="text-align: center; font-family: 'Times New Roman', Times, serif;color: beige;background-color: rgb(0, 0, 0);">REGISTRATION FORM</H1>
+         
+    <DIV id="main">
+        <p style="font-size: 25px; text-align: center;"><B><u>FILL BELOW ENTRIES</u></B></p>
+        
+         <div style="border: 2px solid rgba(255,255,255,0.5); border-radius: 20px; padding-top: 20px;">
+            <FORM class="requires-validation" novalidate>
+
+                <div class="mb-3 row" >
+                    <label for="inputPassword" class="col-sm-2 col-form-label" style="margin-top: 0;">NAME:</label>
+                    <div class="col-sm-8">
+                        <input  type="text" class="form-control" name="name" placeholder="Your Name"  onkeydown="return /[a-z]/i.test(event.key)" required/> 
+                        <div class="valid-feedback">Username field is valid!</div>
+                        <div class="invalid-feedback">Username field cannot be blank!</div>
+                    </div>  
+                </div>
+    
+                <div class="mb-3 row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label">EMAIL:</label>
+                    <div class="col-sm-8">
+                        <input type="email"name="email" class="form-control" placeholder="EMAIL " required/>
+                        <div class="valid-feedback">Email field is valid!</div>
+                        <div class="invalid-feedback">Email field cannot be blank!</div>
+                    </div>
+                </div>
+    
+                <div class="mb-3 row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label">MOBILE:</label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control" placeholder="MOBILE NO." minlength="10" maxlength="10" onkeypress="return onlyNumberKey(event) "required />
+                        <div class="valid-feedback">Mobile no field is valid!</div>
+                        <div class="invalid-feedback">Mobile no cannot be blank!</div>
+                    </div>
+                </div>
+    
+                <div class="mb-3 row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label">GENDER:</label>
+                    <div class="col-sm-1">
+                        <input type="radio" class="btn-check" name="gender" id="male" autocomplete="off" required  >
+                        <label class="btn btn-warning btn-outline-secondary" for="male" >Male</label>
+                    </div>
+                    <div class="col-sm-1">
+                        <input type="radio" class="btn-check" name="gender" id="female" autocomplete="off" required>
+                        <label class="btn btn-warning btn-outline-secondary" for="female">Female</label>
+                    </div>
+                    <div class="col-sm-2">
+                        <input type="radio" class="btn-check" name="gender" id="secret" autocomplete="off" required>
+                        <label class="btn btn-warning btn-outline-secondary" for="secret">Prefer Not to Say</label>
+                           <div class="valid-feedback mv-up">You selected a gender!</div>
+                           <div class="invalid-feedback mv-up">Please select a gender!</div>
+                </div>
+
+              
+                </div>
+                   
+                <div class="mb-3 row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label">ADDRESS:</label>
+                    <div class="col-sm-8">
+                        <textarea name="ADDRESS" class="form-control" rows="2" cols="50" required></textarea>
+                        <div class="valid-feedback mv-up">You selected an Address!</div>
+                        <div class="invalid-feedback mv-up">Please select an Address!</div>
+                    </div>
+                </div>
+
+                <div class="mb-3 row" style="margin-top: 20px;">
+                <label for="HQ" class="col-sm-2 col-form-label">HIGHEST QUALIFICATION:</label>
+                <div class="col-sm-8">
+                    <select name="HQ" class="form-control" id="drop" required>
+                        <option style="text-align: center;">--SELECT ONE--</option>
+                        <option >12TH BOARD</option>
+                        <option >10TH BOARD</option>
+                        <option >GRADUATE</option>
+                        <option>POST GRADUATE</option>
+                    </select>
+                </div>
+                </div>
+
+            <div class = "mb-3 row">  
+                <label for="Date" class="col-sm-2 col-form-label">DATE OF BIRTH:</label>  
+                <div class="col-sm-8" >
+                <input type = "date" name = "date" class="form-control" required>  
+                <div class="valid-feedback mv-up">You selected a DOB!</div>
+                <div class="invalid-feedback mv-up">Please select a DOB!</div>
+                </div>
+           </div>  
+        
+  
+              <div class="mb-1 row">
+                <label for="inputPassword" class="col-sm-2 col-form-label">TECHNICAL SKILLS:</label>
+                <div class="col-sm-8" > 
+
+            <input type="checkbox" >C# &nbsp;&nbsp;&nbsp;
+            <input type="checkbox" >C++ &nbsp;&nbsp;&nbsp;
+            <input type="checkbox" >JAVA &nbsp;&nbsp;&nbsp;
+            <input type="checkbox" >PYTHON &nbsp;&nbsp;&nbsp;
+            <input type="checkbox" > JAVASCRIPT &nbsp;&nbsp;&nbsp;
+        </div> 
+    </div> <br>
+                <div class="gap-2">
+                <BUTTOn name="submit" id="submit" type="submit" CLASS="button btn btn-success btn-lg" onclick="myFunction()"><B>REGISTER</B></BUTTOn><BR><br>
+                </div>
+                </DIV>
+
+                
+         
+        </FORM>
+
+         </div>
+         <br><br>
+
+                <P class="p" ><b style="color: aliceblue;"> CREATED BY XYZ</b></P>
+        
+            
+       
+    </body>
+    <script>
+         function onlyNumberKey(evt) {
+              var ASCIICode = (evt.which) ? evt.which : evt.keyCode
+              if (ASCIICode > 31 && (ASCIICode < 48 || ASCIICode > 57))
+                  return false;
+              return true;
+          }
+      
+          (function () {
+           'use strict'
+            const forms = document.querySelectorAll('.requires-validation')
+            Array.from(forms)
+            .forEach(function (form) {
+            form.addEventListener('submit', function (event) {
+              if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+          }                
+        
+          form.classList.add('was-validated')
+        }, false)
+        })
+      })()
+ 
+
+</script>
+
+</html>
